@@ -3,9 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;  
-  background-image: url(../public/images.jpeg);
+  background-image: url(/public/images.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  
+
 }
 
 .screenborder {
@@ -37,7 +40,6 @@ h2 {
 }
 
 .box {
-  /* border: 1px solid white; */
   margin-top: 20px;
   margin-bottom: 20px;
   width: 300px;
@@ -66,22 +68,14 @@ h2 {
 .outerSVG{
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* padding: 10px; */
+  align-items: center; 
 
 }
-.outerCircle{
-  fill: none;
-  stroke:#24214a;
-  stroke-width: 10px;
-  stroke-linecap: round;
- 
 
-}
 
 .innerCircle{
-  fill: none;
-  stroke:aqua ;  
+  fill: none; 
+  stroke:#31134b;
   stroke-width: 10px;
   stroke-linecap: round;
  
@@ -89,11 +83,9 @@ h2 {
 }
 
 .innerdisplay {
-  /* background: linear-gradient(135deg, #000000 60%, #0d0d3a); */
-  /* border: 1px solid yellow; */
+  
   width: 100%;
   height: 100%;  
-  /* border-radius: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -103,17 +95,16 @@ h2 {
 }
 
 .circularAnimaion{
-  stroke-dasharray: 842;
-  stroke-dashoffset: -842;
-  stroke: #31134b;
+ opacity: 0;
+  stroke-dasharray: 850;
+  stroke-dashoffset: -850;
+  stroke:aqua;  
   stroke-linecap: round;
   animation: circle 1s  linear infinite;
   animation-play-state: paused;
 }
 
 .hours {
-  /* border: 1px solid aqua; */
-  /* width: 50%;    */
   display: flex;
   justify-content: center;
   align-items: last baseline;
@@ -160,7 +151,6 @@ h2 {
 }
 
 .laps {
-  /* border: 1px solid aqua; */
   width: 90%;
   height: 170px;
   margin: 5px 10px 5px 10px;
@@ -181,7 +171,7 @@ h2 {
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #5a4f63;
-  /* border: 1px solid white; */
+
 }
 
 .lapText {
@@ -230,7 +220,7 @@ h2 {
 
 @keyframes circle {
   from{
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0;    
   }
   
 }
@@ -241,13 +231,6 @@ h2 {
      height: 660px;
      width: 70%;
    }
- 
-  /* .box {
-     margin-top: 30px;
-     margin-bottom: 15px;
-     width: 260px;
-     height: 280px;
-   } */
  
   .display {
      width: 100%;
@@ -283,10 +266,7 @@ h2 {
 
   }
 
-  .box {        
-    /* width: 280px;
-    height: 280px; */
-
+  .box {   
     width: 295px;
     height: 394px;
 

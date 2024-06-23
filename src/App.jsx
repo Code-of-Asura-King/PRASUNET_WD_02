@@ -43,6 +43,8 @@ function App() {
     setisRunning(true);
     startTimeRef.current = Date.now() - elapsedTime
     animationref.current.style.animationPlayState = "running"
+    animationref.current.style.animationName = "";
+    animationref.current.style.opacity =1 ;
 
 
   }
@@ -58,9 +60,8 @@ function App() {
     setisRunning(false)
     setelapsedTime(0)
     setLaps([])
-    id.current = 0;
-    animationref.current.style.animationPlayState = "paused"
-    animationref.current.style.strokeDashoffset = 0
+    id.current = 0;    
+    animationref.current.style.animationName = "none";
 
 
   }
@@ -84,8 +85,8 @@ function App() {
         <h2>Stopwatch</h2>
         <div className="box">
           <svg height="100%" width="100%" className='outerSVG' xmlns="http://www.w3.org/2000/svg">
-            <circle className='innerCircle' r="135" cx="150" cy="145" />
-            <circle ref={animationref} className='circularAnimaion' r="135" cx="150" cy="145" fill="none" stroke="#31134b" strokeWidth="11px" />
+            <circle className='innerCircle' r="135" cx="150" cy="145"  />
+            <circle ref={animationref} className='circularAnimaion' r="135" cx="150" cy="145" fill="none"  strokeWidth="11px" />
             <foreignObject x="0" y="0" width="100%" height="100%">
               <div className="innerdisplay" >
                 <div className="hours">
